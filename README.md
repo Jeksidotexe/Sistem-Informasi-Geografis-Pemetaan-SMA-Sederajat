@@ -1,60 +1,45 @@
-# CodeIgniter 4 Framework
+# 📌 Project Title
 
-## What is CodeIgniter?
+Aplikasi Sistem Informasi Geografis (SIG) berbasis website untuk memetakan persebaran Sekolah Menengah Atas/Sederajat di Kabupaten Sambas. Proyek ini bertujuan menyediakan data lokasi sekolah secara interaktif, akurat, dan mudah diakses, guna mendukung analisis pemerataan pendidikan serta mempermudah masyarakat dalam memperoleh informasi sekolah.  
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## ✨ Features
+- ✅ Fitur 1 (Login)
+- ✅ Fitur 2 (CRUD Data Kecamatan, CRUD Data Desa, CRUD Data Jenjang Pendidikan, CRUD Data Sekolah, CRUD Data Kepala Sekolah, CRUD Data Operator)
+- ✅ Fitur 3 (Export PDF)
+- ✅ Fitur 4 (Dashboard Statistik)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+---
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## 🖼️ Screenshots  
 
-## Important Change with index.php
+<p align="center">
+  <img src="https://github.com/Jeksidotexe/Sistem-Informasi-Geografis-Pemetaan-SMA-Sederajat/blob/master/screenshots/Landing%20Page.png?raw=true" alt="Landing Page" width="700" />
+</p>
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+<p align="center">
+  <img src="https://github.com/Jeksidotexe/Sistem-Informasi-Geografis-Pemetaan-SMA-Sederajat/blob/master/screenshots/Landing%20Page%20Map.png?raw=true" alt="Landing Page - Maps" width="700" />
+</p>
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+<p align="center">
+  <img src="https://github.com/Jeksidotexe/Sistem-Informasi-Geografis-Pemetaan-SMA-Sederajat/blob/master/screenshots/Dashboard-Admin.png?raw=true" alt="Dashboard Admin" width="700" />
+</p>
 
-**Please** read the user guide for a better explanation of how CI4 works!
+<p align="center">
+  <img src="https://github.com/Jeksidotexe/Sistem-Informasi-Geografis-Pemetaan-SMA-Sederajat/blob/master/screenshots/Dashboard-Operator.png?raw=true" alt="Dashboard Operator" width="700" />
+</p>
 
-## Repository Management
+---
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## 🛠 Tech Stack
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap  
+- **Backend:** PHP, Codeigniter  
+- **Database:** MySQL 
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+---
 
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## ⚡ Installation
+1. Clone repository  
+   ```bash
+   git clone https://github.com/Jeksidotexe/Sistem-Informasi-Geografis-Pemetaan-SMA-Sederajat.git
