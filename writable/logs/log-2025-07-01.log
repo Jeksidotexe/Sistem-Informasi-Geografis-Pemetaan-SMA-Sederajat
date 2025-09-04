@@ -1,0 +1,85 @@
+DEBUG - 2025-07-01 14:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-01 15:44:08 --> Email: sendWithSmtp throwed ErrorException: fgets(): SSL: An existing connection was forcibly closed by the remote host in C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php:2117
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fgets(): SSL: A...', 'C:\\xampp\\htdocs...', 2117)
+#1 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(2117): fgets(Resource id #165, 512)
+#2 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(1996): CodeIgniter\Email\Email->getSMTPData()
+#3 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(1876): CodeIgniter\Email\Email->sendCommand('quit')
+#4 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(1858): CodeIgniter\Email\Email->SMTPEnd()
+#5 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(1698): CodeIgniter\Email\Email->sendWithSmtp()
+#6 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(1592): CodeIgniter\Email\Email->spoolEmail()
+#7 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\app\Controllers\Kontak.php(45): CodeIgniter\Email\Email->send()
+#8 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\CodeIgniter.php(933): App\Controllers\Kontak->kirim()
+#9 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kontak))
+#10 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+ERROR - 2025-07-01 15:44:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-07-01 15:44:08 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-318c13a20eesm11209092a91.15 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [114.10.137.247]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK 98e67ed59e1d1-318c13a20eesm11209092a91.15 - gsmtp
+
+to: 250 2.1.5 OK 98e67ed59e1d1-318c13a20eesm11209092a91.15 - gsmtp
+
+data: 354 Go ahead 98e67ed59e1d1-318c13a20eesm11209092a91.15 - gsmtp
+
+
+ERROR - 2025-07-01 15:44:08 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL: An existing connection was forcibly closed by the remote host in C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php:2079
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL: ...', 'C:\\xampp\\htdocs...', 2079)
+#1 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(2079): fwrite(Resource id #165, 'QUIT\r\n')
+#2 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(1988): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 C:\xampp\htdocs\aplikasi-pemetaan-sekolah\system\Email\Email.php(2223): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+DEBUG - 2025-07-01 15:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 15:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 16:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

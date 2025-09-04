@@ -1,0 +1,122 @@
+/* --- Konfigurasi dan Variabel Global --- */
+:root {
+  --bg-page: #f0f2f5; /* Latar belakang halaman abu-abu muda */
+  --bg-card: #ffffff; /* Warna dasar kartu */
+  --color-primary-text: #1c1e21; /* Warna teks utama (hitam lembut) */
+  --color-secondary-text: #606770; /* Warna teks sekunder (abu-abu) */
+  --color-accent: #007bff; /* Warna aksen untuk link (biru) */
+  --border-color: #e9ebee; /* Warna garis pemisah */
+}
+
+/* --- Gaya Dasar dan Latar Belakang --- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-page);
+  color: var(--color-primary-text);
+  /* Trik untuk menengahkan kartu secara vertikal & horizontal */
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* --- Kartu Profil Utama --- */
+.profile-card {
+  background-color: var(--bg-card);
+  width: 100%;
+  max-width: 450px; /* Lebar maksimal kartu */
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* overflow: hidden; Penting agar border-radius bekerja */
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Header Kartu (Area Foto) --- */
+.card-header {
+  padding-top: 2rem;
+}
+
+.profile-picture {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid var(--bg-card);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  margin: -80px auto 0 auto; /* Trik agar foto sedikit tumpang tindih */
+  position: relative;
+  z-index: 2;
+}
+
+/* --- Body Kartu (Konten Teks) --- */
+.card-body {
+  padding: 2rem;
+}
+
+.profile-name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.profile-title {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-secondary-text);
+  margin-bottom: 1.5rem;
+}
+
+.profile-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-secondary-text);
+}
+
+/* --- Garis Pemisah --- */
+.separator {
+  border: none;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 2rem 0;
+}
+
+/* --- Info Kontak --- */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Jarak antar item kontak */
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  width: 40px; /* Memberi ruang agar ikon dan teks sejajar rapi */
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.contact-item a,
+.contact-item span {
+  color: var(--color-secondary-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-all; /* Agar email panjang tidak merusak layout */
+}
+
+.contact-item a:hover {
+  color: var(--color-accent);
+}
